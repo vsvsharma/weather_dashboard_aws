@@ -10,7 +10,7 @@ class Connect2Db:
     Database is connected with the following credentials
     """
     def __init__(self):
-        self.host = "weather-api-project.cioyctkfmbq5.ap-south-1.rds.amazonaws.com"
+        self.host = "mydatabase-instance.abc123xyz456.us-east-1.rds.amazonaws.com"
         self.user = "postgres"
         self.password = "Varun#123"
         self.dbname = "weather_api_project"
