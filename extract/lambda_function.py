@@ -9,7 +9,7 @@ from io import StringIO
 class WeatherData:
     def __init__(self):
         self.base_url = "http://api.weatherapi.com/v1/current.json"
-        self.api_key = "98350e503e094a6aae7190947231211"
+        self.api_key = "XXXXXXXXXXXX"
 
     def fetch_data(self, location, aqi="yes"):
         """
@@ -139,8 +139,8 @@ class uploadToS3:
 
     def __init__(self):
         self.s3 = boto3.client(service_name='s3',
-                               aws_access_key_id = 'AKIAZKCVMN7GCNMWKQ4I',
-                               aws_secret_access_key='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')
+                               aws_access_key_id = 'XXXXX!XXX',
+                               aws_secret_access_key='XXXXXXXXXXXX')
         
     def upload_to_s3(self, location_df, current_df, air_quality_df):
         """

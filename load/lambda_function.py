@@ -11,8 +11,8 @@ class Connect2Db:
     """
     def __init__(self):
         self.host = "mydatabase-instance.abc123xyz456.us-east-1.rds.amazonaws.com"
-        self.user = "postgres"
-        self.password = "Varun#123"
+        self.user = "XXXXXX"
+        self.password = "XXXXXXX"
         self.dbname = "weather_api_project"
         self.conn = psycopg2.connect(
             host=self.host, user=self.user, password=self.password, dbname=self.dbname
@@ -48,8 +48,8 @@ class pulls3:
     def __init__(self):
         self.s3 = boto3.client(
             service_name='s3',
-                               aws_access_key_id = 'AKIAZKCVMN7GCNMWKQ4I',
-                               aws_secret_access_key='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'
+                               aws_access_key_id = 'XXXXXXXX',
+                               aws_secret_access_key='XXXXXXXXXXXX'
         )
         self.db_connector = Connect2Db()  
 
